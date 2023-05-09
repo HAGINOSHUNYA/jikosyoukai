@@ -1,0 +1,168 @@
+<!DOCTYPE html><!--HTMLの記述宣言-->
+<html>
+<head>
+  <title>socialTech</title><!--ページタブに表示される言葉の設定-->
+   <meta charset="UTF-8"><!--文字コードの設定-->
+   <meta name="description" content="socialTechはEdtech業界のリーディングカンパニーを目指します。">
+    <!--ネームで「description」を設定　コンテンツでページの説明、検索結果に表示される-->
+    <meta name="viwport" content="width=device-width,initial-scale=1.0">
+    <!--レスポンシブデザイン。WEBページの画面をどのように表示させるかの設定、今回は拡大縮小を行わない設定
+    させたい場合は「initial-scale」の数字を大きくしたり、小さくしたりする-->
+    <link rel="stylesheet" href="サンプル.css">
+    <!--ＣＳＳファイルの読み込み、相対パスで指定-->
+
+</head>
+
+<body>
+  <!--以下ヘッダー部分の作成-->
+  <header>
+   <!--ロゴの作成-->
+   <a href="サンプル.html" id="logo">
+   <img src="images\images\logo.png" alt="トップページに戻る">
+   </a>
+   <!---->
+   <nav id="nav">
+    <a href="mission.html">MISSION</a>
+    <a href="product.html">PRODUCT</a>
+    <a href="サンプル.html#aboutus">ABOUT US</a>
+    <a href="サンプル.html#vision">VISION</a>
+    <a href="サンプル.html#company">COMPANY</a>
+    <a href="サンプル.html#contact">CONTACT</a>
+   </nav>
+  </header>
+  <main>
+    <article>
+       <!--中身がメインコンテンツであることを表す-->
+       <!--メインビジュアル-->
+       <section id="main-visual"><!--文の章や節を表す-->
+         <div id="main-message"> 
+           <h1>WORLD PEACE</h1>
+           <p>IT教育で世界平和を実現する</p>
+         </div>
+          <img src="images\images\index\index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
+       </section>
+<!--ミッションのコンテンツ-->
+   <section id="mission">
+  
+       <h2 class="index-h2">MISSION</h2><img src="images\images\line.png">
+      <div id="mission-flex">
+
+        <div><!--左側コンテンツ-->
+          <img id="mission-photo" src="images\images\index\index-mission.png">
+          <h3>世界平和の実現</h3>
+         <p>人類の悲願である世界平和。世界兵をを脅かす様々な社会問題を解決するたまには、イノベーションをどんどん起こしていく必要があります。
+           socialTechは、プログラミング教育を通してイノベーションを産出することで、世界平和という大きなテーマに挑戦していきます。
+         </p>
+        </div>
+
+       <div><!--右側のコンテンツ-->
+          <img id="S2DGs" src="images\images\index\s2dgs.png" alt="S2DGs">
+          <h3>S2DGsの実現</h3>
+          <p>国連が掲げる「Sutainable Development Goals(持続可能な開発目標)」に含まれる17つの
+            グローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。
+          </p>
+           <a href="mission.html">
+              <img src="images\images\button-more.png" alt="もっとみる">
+           </a>
+        </div>
+     
+      </div>
+   </section>
+
+   <section id="product">
+      <h2 class="index-h2">PRODUCT</h2>
+      <div><!--フレックスボックスの設置-->
+        <div id="product-left"><!--左側-->
+
+            <div><!--左上-->
+                <img class="product-photo" src="images\images\index\index-mantoman.png" alt="PCでコードを書く男性">
+                <div class="product-explain">
+                  <span>MAN TO MAN</span>
+                  <h3>プログラミング教育</h3>
+                  <p>2013念より日本で唯一の専属講師によるマンツーマンのプログラミングレッスンを開始。
+                    AI/人口知能やウェブデザインの学習も可能です。
+                  </p>
+                </div>
+            </div><!--左上終了-->
+
+            <div><!--左下-->
+              <img class="product-photo" src="images\images\index\index-career.png">
+              <div class="product-explain">
+                <spaN>CAREER</spaN>
+                <h3>人材紹介事業</h3>
+                <p>エンジニアの転職に特化した履歴書や職務経歴書のアドバイスや面接対策を行い、
+                  豊富な求人の中から適切なキャリア選択を支援します。
+                </p>
+              </div>
+            </div><!--左下終了-->  
+
+        </div><!--左側終了-->
+
+        <div id="product-right"><!--右側-->
+
+          <div><!--右上-->
+            <img class="product-photo" src="images\images\index\index-media.png" alt="スマホを操作する人">
+            <div class="product-explain">
+              <span>MEDIA</span>
+              <h3>プログラミング学習メディア</h3>
+              <p>月間200万に読まれる日本最大級のプログラミング学習サイト「socialtech Blog」や
+                　Youtubeチャンネルにて学習情報を発信しています。
+              </p>
+            </div>
+          </div><!--右上終了-->
+
+          <div><!--右下-->
+            <img class="product-photo" src="images\images\index\index-b2b.png" alt="講義中の男性とそれを聴く人々">
+            <div class="product-explain">
+              <span>B2B</span>
+              <h3>法人研修事業</h3>
+              <p>社員のスキルアップ・資格取得・福利厚生を目的としたプログラミング法人研修。
+                　貴社の事業モデルに合わせた研修内容の提案をいたします。
+              </p>
+            </div>
+          </div><!--右下終了-->
+
+        </div><!--右側終了-->
+    </div><!--フレックスボックスの終了-->
+
+      <div><!--画像リンクの塊-->
+        <a id="product-more" href="product.html">
+          <img src="images\images\button-more.png" alt="もっと見る">
+        </a>
+      </div><!--画像リンク終了-->
+   </section>
+<!--ABOUT US-->
+   <section id="aboutus">
+    <h2 class="index-h2">ABOUT US</h2>
+    <h3>3つの組織文化</h3>
+    <div><!--表の塊-->
+      <table class="culture-table">
+
+        <tr><!--一行目-->
+          <td><!--一列目-->
+            <span class="culture-num">01</span>
+          </td>
+          <td><!--二列目-->
+            <span class="culture-en">FLEXIBLE</span>
+            <span class="culture-jp">フレキシブル</span>
+          </td>
+        </tr><!--一行目終了-->
+        <tr><!--二行目-->
+          <td><!--空白のセル--></td><!--一列目-->
+          <td><!--二列目-->
+              <p class="culture-description">
+                
+              </p>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+
+   </section>
+     </article><!--中身が記事であることを表す-->
+  </main>
+</body>
+</html>

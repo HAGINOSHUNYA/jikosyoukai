@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact</title>
+  <meta=charset="UTF-8">
+  <meta mane="description" content="連絡先ページ">
+  <meta name="viwport" content="width=device-width,initial-scale=1.0">
+    <!--レスポンシブデザイン。WEBページの画面をどのように表示させるかの設定、今回は拡大縮小を行わない設定
+    させたい場合は「initial-scale」の数字を大きくしたり、小さくしたりする-->
+<link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body> 
+  <header>
+   <!--ロゴ画像-->
+
+   <div id="link">
+     <nav>
+       <a href="index.html">introduction</a>
+       <a href="portfolio.html">portfolio</a>
+       <a href="contact.html">contacto</a>
+     </nav>
+   </div>
+
+  </header> 
+<hr>
+
+    <h1>contact</h1>
+<hr>
+<from>
+
+<div id="from">
+  <label>お名前</label><br>
+    <input type="text" placeholder="名前を入力してください" name="name">
+    
+  <br>
+  <label>メールアドレス</label>
+   <div>
+    <input type="text" placeholder="アドレス" name="email>"<p>@
+    <input type="text" placeholder="ドメイン" list="domein">
+    <datalist id="domein">
+
+      <option >ezweb.ne.jp</option>
+
+    </datalist>
+  </div>
+  <br>
+
+
+
+  <label>電話番号</label><br>
+    <input type="text" placeholder="ハイフン">
+  <br>
+
+  <label>問合内容</label><br>
+    <textarea></textarea>
+  <br>
+
+  <label>ご連絡方法</label><br>
+   <label>お電話</label> <input type="radio" name="renraku">
+  <label>メール</label> <input type="radio" name="renraku">
+
+  <label>どちらでも</label><input type="radio" name="renraku">
+  <br>
+
+  <label>利用規約に同意する</label>
+  <input type="checkbox">
+
+  <br>
+
+  <input type="submit" value="送信">
+  <input type="reset" value="リセット">
+
+</div>
+</from>
+<br>
+<footer>
+  <div id="nav-link">
+   <nav>
+    <a href="index.html">introduction</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="contact.html">contacto</a>
+   </nav>
+  </div>
+</footer>
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 768px){
+  
+}
+.flexbox-container{
+  height:500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: lightcyan;
+}
+.flexbox-item{
+  padding: 5px;
+  margin:5px;
+  background-color: orange;
+}
+#item01{
+  align-self: center;
+  flex-basis: 200px;
+}
+#item02{
+  align-self: baseline;
+  flex-basis: 200px;
+}
+#item03{
+  align-self: stretch;
+  flex-basis: 200px;
+}
+#item04{
+  flex-basis: 200px;
+}
+#item05{
+  flex-basis: 200px;
+}
+#item06{
+  flex-basis: 200px;
+}
+#item07{
+  flex-basis: 200px;
+}
+#item08{
+  flex-basis: 200px;
+}

@@ -1,0 +1,185 @@
+/*全ページ共通で使うフォントの指定、PC・スマホ共通のスタイル*/
+body{
+  font-family: "source sans Pro", "Hiragino kaku Gothic ProN", Meiryo, Arial, sans-serif;
+
+}
+p{
+  font-size: 15px;
+}
+/*PC用のスタイル*/
+/*横幅の設定*/
+body{
+  max-width: 1080px;
+  min-width: 960px;
+  margin:0 auto 0 auto;/*bodyの要素を左右で中央揃えする設定*/
+}
+/*ヘッダー*/
+header{
+  display: flex;
+  /*「header」をコンテナ（親）とした
+  フレックスボックス*/
+  justify-content: space-between;
+}
+/*ナビゲーションのレイアウト*/
+#nav{
+  text-align: center;
+  font-size: 14px;
+  padding-top:15px;
+}
+
+/*ナビゲーションのリンクの装飾設定*/
+#nav > a{/*「 > a」で直下の要素にのみCSSを適用させる*/
+  text-decoration: none;
+  margin-left: 20px;
+}
+#nav > a:link{/*疑似クラス（未訪問のリンク）*/
+  color:black;
+}
+#nav > a:visited{/*疑似クラス（訪問済み）*/
+  color: black;
+}
+#nav > a:hover{/*疑似クラス（要素の上にカーソルが乗っているとき）*/
+  color: black;
+  text-decoration: underline;
+}
+#nav > a:active{/*疑似クラス（要素がアクティブのときに）*/
+  color: black;
+}
+/*メインビジュアル*/
+#main-visual{
+  position:relative;
+  height: 400px;
+}
+#main-message{
+  position: absolute;/*要素の位置を絶対位置（親要素基準）にする*/
+  top:0;/*上面の位置を基準値から0移動*/
+  left: 0;/*左面の位置を基準地から0移動*/
+  background-color: blue;
+  border-radius: 0 0 476px 0;/*要素のR面取り*/
+  max-width:620px;/*幅の最大値の設定*/
+  height:100%;
+  width:100%;/*最大幅が620に設定されているので620ｐｘ*/
+  z-index: 11;/*要素のレイヤー位置設定*/
+  
+}
+#main-message > h1{/*main-massageの中の真下のh1にのみスタイル適用*/
+  font-size: 60px;
+  font-weight: bold;
+  margin:100px 0 0 50px;
+
+}
+#main-message > p{/*main-massageの中の真下のｐにのみスタイル適用*/
+  font-size: 28px;
+  margin: 0 0 0 50px;
+}
+#main-visual > img{
+  max-width: 620px;
+  border-radius: 476px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+}
+/*ミッションの見出し*/
+h2{
+  margin: 40px 0 0 0 ;
+}
+h2::before { 
+  content: url("画像パス");
+  margin-left:  10px;
+}
+
+h3{
+  font-size: 27px;
+}
+/*ミッションのセレクションボックス親はbody?*/
+#mission{
+  margin: 80px auto 80px auto;/*多分中央ぞろえ*/
+  width: 100%
+}
+#mission-flex{
+  width:100%;/*親はsection?*/
+  display: flex;/*フレックスボックスの宣言*/
+}
+#mission-flex > div{/*真下のdiv要素飲みに適用*/
+  width: 50%;/*左側コンテンツボックスを親要素(section→body)のちょうど半分にする*/
+  margin: 20px;
+}
+#mission-photo{
+  width: 100%;/*親要素（左側コンテンツ）に対して100％の幅になる*/
+
+}
+#s2dgs{
+  margin-top: 50px;
+  width: 100%;
+}
+/*プロダクト*/
+#product{
+  background-color: #fafafa;
+  width: 100%;
+  margin: 80px 0 80px 0;
+  padding: 10px 40px 0px 40px;
+}
+/*外枠*/
+#product > div{
+  margin-top: 40px;
+  display:flex;
+}
+/*左のコラム*/
+#product-left{
+  width: 50%;
+  margin-right: 20px;
+}
+/*右のコラム*/
+#product-right{
+  width:50%;
+  margin-left:20px;
+  margin-top:80px;
+}
+/*画像+説明の枠*/
+#product-left > div{
+  position:relative;/*画像枠にabsoluteを指定するため*/
+  height: 480px;
+  margin-right: 20px;
+}
+#product-right > div{
+  position: relative;
+  height: 480px;
+  margin-left: 20px;
+}
+/*画像*/
+.product-photo{
+  width:100%
+}
+/*説明文の枠*/
+.product-explain{
+  background-color: #ffff;
+  position:absolute;
+  left:0;
+  top:280px;
+  margin: 0 40px 0 40px;
+  padding:20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);/*透明度指定　raba(赤 , 緑 , 青 , 透明度)*/
+}
+/*説明文の英語*/
+.product-explain > span{
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 16px ;
+  margin: 0;
+}
+/*説明文の見出し*/
+.product-explain > h3{
+  font-size: 20px;
+  margin: 5px 0 5px 0;
+}
+/*説明文*/
+.product-explain > p{
+  font-size: 14px;
+  margin: 0;
+}
+/*「もっと見る」ボタン*/
+#product-more{
+  margin: 0 auto -42px auto;
+}

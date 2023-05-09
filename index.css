@@ -1,0 +1,168 @@
+body{
+  font-family: "source sans Pro", "Hiragino kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  background-color: rgb(218, 124, 58);
+  max-width: 1080px;
+  min-width: 960px;
+  margin:0 auto 0 auto;/*bodyの要素を左右で中央揃えする設定*/
+  
+}
+header{
+  background-color: rgb(243, 132, 6);
+}
+footer{
+  background-color: #ededed;
+  text-align: right;
+}
+a{
+  font-size: 30px;
+  
+}
+a : link{/*疑似クラス（未訪問のリンク）*/
+  color:crimson;
+}
+a :hover{/*疑似クラス（要素の上にカーソルが乗っているとき）*/
+  color:crimson ;
+  text-decoration: underline;
+  opacity: 0.75;/*ホバーしたとき透明になる*/
+}
+a:active{
+ color: crimson;
+}
+a:visited{
+  color: crimson;
+}
+h2{
+  margin: 0px;
+  text-align: center;
+}
+p{
+  font-size: 20px;
+  margin: 0px;
+}
+#hitokoto{
+  text-align: center;
+
+}
+
+
+.nav-link{
+  text-align:right;
+}
+h1{
+  font-size: 100px;
+  color:rgb(236, 236, 236);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#pearent{
+  display: flex;
+  justify-content: center;
+}
+
+
+img{
+  width:50%;
+  
+  border-radius: 200px;
+}
+#img{
+  text-align: center;
+
+}
+.img-container{
+  display: flex;/*「img-container」をコンテナとしたフレックスボックス*/
+  justify-content: center;
+  align-items: center;
+}
+#img-line{ 
+  text-align: center;
+  display: inline;
+  width: 50px; 
+}
+
+/*背景色など*/
+.line-bc{
+  padding: 20px 10px;
+  max-width: 450px;
+  margin: 15px auto;
+  text-align: right;
+  font-size: 14px;
+  background-color: #7ba4cd;
+}
+/*左側コメント*/
+.hidari{
+  width:100%;
+  margin: 10px 0;
+  overflow: hidden;/*はみ出たところを隠す*/
+}
+.hidari .icon{
+  float: left;
+  margin-right: -50px;
+  width: 40px;
+}
+.hidari .icon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.hidari .left-messag{
+  width: 100%;
+  text-align: left;
+}
+.says{
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 10px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background-color: #ededed;
+}
+.says::after{/*左引き出しのとげ部分　三角を作って白い箱に重ねる*/
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px; 
+  left: -19px;/*重ねる部分*/
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);/*要素を回転させる*/
+  transform: rotate(35deg);
+}
+.says p {
+  margin: 0;
+  padding: 0;
+}
+/*右コメントの設定*/
+.migi{
+  margin: 10px 0;
+}
+.migi p{
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 250px;
+  border-radius: 12px;
+  background-color: #30e852;
+  font-size: 15px;
+}
+.migi p::after{
+  content: "";
+  position: absolute;
+  top: 3px; 
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+/*「contact」ページのレイアウト*/
+#link{
+  text-align: right;
+}
+#from{
+  text-align: center;
+}
